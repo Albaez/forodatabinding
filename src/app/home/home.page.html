@@ -1,20 +1,49 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Foro Data Binding</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+   
+    <br>
+    <br>
+    <strong>Fecha: {{ fecha}}</strong>
+    <br>
+    <br>
+    
+    <strong>Número:</strong>
+    <strong>{{ NumeroDecimal(numero) }}</strong>
+
+    <br>
+    <br>
+    <br>
+    
+    <ion-item>
+      <strong>Nombre: </strong>
+      <br>
+      <ion-input [(ngModel)]="nombre" type="text" placeholder= " Registre Nombre " ></ion-input>
+      <br>
+      <br>
+
+    </ion-item>
+    <ion-button color="warning" (click)="agregarNombre()">Agregar</ion-button>
+    <p>Nombre:<strong>{{nombre}}</strong></p>
+
+    <br>
+
+    <ion-button color="warning" (click)="incrementarContador()">Contador +2 </ion-button>
+    <p>Contador: {{ contador }}</p>
+    
+    
+    
   </div>
+
 </ion-content>
+
+<ion-footer collapse="fade">
+  <ion-toolbar>
+    <ion-title>Alba Zuniga/T32321061</ion-title>
+  </ion-toolbar>
+</ion-footer>
