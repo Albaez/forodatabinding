@@ -1,0 +1,7 @@
+{
+  "name": "forodatabinding",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
